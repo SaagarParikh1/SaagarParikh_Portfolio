@@ -266,7 +266,7 @@ form button:hover {
 }
 
 #about h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #00aaff; /* Highlight color */
 }
@@ -462,4 +462,18 @@ footer a:hover {
 .model-item p {
     margin-top: 10px;
     color: #ffffff;
+}
+
+/* Thumbnail styling */
+.thumbnail {
+    width: auto;
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+h1, p {
+    display: inline-block;
+    vertical-align: middle;
 }
