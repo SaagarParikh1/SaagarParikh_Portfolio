@@ -205,19 +205,50 @@ section {
     }
 }
 
-/* Skills Section */
-#skills ul.skills-list {
-    list-style-type: none;
-    padding: 0;
+.skills-container {
+    max-width: 1200px; /* Set a max width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add some padding */
 }
 
-#skills ul.skills-list li {
-    background-color: #003366; /* Darker blue for skill items */
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 1.1rem; /* Slightly larger font size for readability */
+.skills-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    gap: 10px; /* Space between grid items */
+    margin: 20px 0; /* Space above and below the list */
 }
+
+.skill-button {
+    background-color: #4CAF50; /* A pleasant green color */
+    color: white; /* White text for contrast */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 12px 20px; /* Ample padding */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background and transform */
+    text-align: center; /* Center text in button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.skill-button:hover {
+    background-color: #45a049; /* Darker shade on hover */
+    transform: translateY(-2px); /* Lift the button slightly */
+}
+
+.skill-button a {
+    color: white; /* Link color inside the button */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.skills-list li {
+    display: flex; /* Flexbox to center buttons within list items */
+    justify-content: center; /* Center items */
+    align-items: center; /* Center items vertically */
+}
+
 
 /* Forms */
 form {

@@ -23,6 +23,17 @@
                       background-position: 0% 50%;
                   }
               }
+
+              h2 {
+        text-align: center; /* Center main heading */
+}
+
+h3 {
+    margin-bottom: 10px; /* Space below subheadings */
+    text-align: center; /* Center subheadings */
+}
+
+              
         </style> 
 <head>
     <meta charset="UTF-8">
@@ -48,22 +59,32 @@
 
     <section id="skills">
         <h2>Skills</h2>
-        <ul class="skills-list">
-            <li>HTML/CSS</li>
-            <li>JavaScript (jQuery, Angular, React, Bootstrap)</li>
-            <li>TypeScript</li>
-            <li>PHP</li>
-            <li>SQL</li>
-            <li>Python</li>
-            <li>C++</li>
-            <li>Adobe Creative Suite</li>
-            <li>Figma</li>
-            <li>Unity</li>
-            <li>Graphic Design</li>
-            <li>UI/UX Design</li>
-            <a href="3Dmodeling.html"><li>3D Modeling</li></a>
-            <li>Data Analysis & Visualization</li>
-        </ul>
+        <div class="skills-container">
+            <h3>Programming Languages</h3>
+            <ul class="skills-list programming">
+                <li><button class="skill-button">HTML/CSS</button></li>
+                <li><button class="skill-button">JavaScript (jQuery, Angular, React, Bootstrap)</button></li>
+                <li><button class="skill-button">TypeScript</button></li>
+                <li><button class="skill-button">PHP</button></li>
+                <li><button class="skill-button">SQL</button></li>
+                <li><button class="skill-button">Python</button></li>
+                <li><button class="skill-button">C++</button></li>
+            </ul>
+            
+            <h3>Other Skills</h3>
+            <ul class="skills-list other-skills">
+                <li><button class="skill-button">Adobe Creative Suite</button></li>
+                <li><button class="skill-button">Figma</button></li>
+                <li><button class="skill-button">Unity</button></li>
+                <li><button class="skill-button">Graphic Design</button></li>
+                <li><button class="skill-button">UI/UX Design</button></li>
+                <li><button class="skill-button"><a href="3Dmodeling.html">3D Modeling</a></button></li>
+                <li><button class="skill-button">Data Analysis & Visualization</button></li>
+            </ul>
+        </div>
+    </section>
+    
+    
     </section>
     <footer>
         <p>&copy; 2024 Saagar Parikh. All Rights Reserved.</p>
