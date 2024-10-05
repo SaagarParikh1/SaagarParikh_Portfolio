@@ -11,8 +11,7 @@ header {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
+    align-items: center; 
     background-color: rgba(0, 0, 0, 0.8); /* Adjust background for visibility */
     color: white;
     padding: 10px 0;
@@ -27,7 +26,9 @@ header {
 
 .logo img {
     height: 50px;
-    margin-right: 10px;
+    margin-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
 }
 
 .logo a {
@@ -48,6 +49,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: flex-end; /* Align items to the right */
 }
 
 nav ul li {
@@ -59,6 +61,15 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     position: relative; /* Needed for highlighting effect */
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions for hover */
+}
+
+nav ul li a.active {
+    background-color: #fff; /* Set a white background for active link */
+    color: #333; /* Darker text color for contrast */
+    border-radius: 5px; /* Rounded corners */
 }
 
 nav ul li a::after {
@@ -76,6 +87,7 @@ nav ul li a::after {
 nav ul li a:hover::after {
     transform: scaleX(1);
 }
+
 
 /* Sections */
 section {
@@ -136,6 +148,7 @@ section {
     height: auto;
     object-fit: cover;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
 }
 
 /* Projects Section */
@@ -230,6 +243,7 @@ section {
     transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background and transform */
     text-align: center; /* Center text in button */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    margin-top: 5px;
 }
 
 
@@ -399,16 +413,15 @@ form button:hover {
 .typewriter h1 {
     color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 0.7em; /* Adjusted for a smaller font size */
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typewriter cursor */
+    border-right: .18em solid orange; /* The typewriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .1em; /* Adjust as needed */
     animation: 
       typing 1.8s steps(20, end),
-      blink-caret .5s step-end infinite;
-    width: 390px; /* Initial width of the text container */
+      blink-caret .8s step-end infinite;
+    width: 400px; /* Initial width of the text container */
 }
 
 /* The typing effect */
