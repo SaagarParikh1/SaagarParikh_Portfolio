@@ -5,15 +5,13 @@
     align-items: flex-start;
     gap: 20px; /* Adjust spacing as needed */
 }
-
-.about,
-.skills {
-    flex: 1;
+.about {
+    border-right: 2px solid #ffffff;
+    padding-right: 20px;
 }
 
-.skills {
-    border-left: 2px solid #ffffff; /* Adjust color and thickness as needed */
-    padding-left: 20px;
+.about, .skills {
+    flex: 1;
 }
 
 .skills-list {

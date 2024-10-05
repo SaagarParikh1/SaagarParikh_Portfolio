@@ -221,22 +221,17 @@ section {
 }
 
 .skill-button {
-    background-color: #4CAF50; /* A pleasant green color */
+    background-color: #844caf; /* A pleasant green color */
     color: white; /* White text for contrast */
     border: none; /* Remove border */
     border-radius: 8px; /* Rounded corners */
-    padding: 12px 20px; /* Ample padding */
-    cursor: pointer; /* Pointer cursor on hover */
-    font-size: 16px; /* Font size */
+    padding: 25px 30px; /* Ample padding */
+    font-size: 18px; /* Font size */
     transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background and transform */
     text-align: center; /* Center text in button */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
 }
 
-.skill-button:hover {
-    background-color: #45a049; /* Darker shade on hover */
-    transform: translateY(-2px); /* Lift the button slightly */
-}
 
 .skill-button a {
     color: white; /* Link color inside the button */
@@ -247,6 +242,29 @@ section {
     display: flex; /* Flexbox to center buttons within list items */
     justify-content: center; /* Center items */
     align-items: center; /* Center items vertically */
+}
+
+   /* Linked button style (buttons with links) */
+   .link-button {
+    background-color: #00013e; /* Distinct background color */
+    color: #ffffff;
+    cursor: pointer;
+    
+
+}
+
+#skills h1 {
+    font-size: 40px;;
+}
+
+#skills h2 {
+    font-size: 25px;
+}
+
+/* Hover effect for linked buttons */
+.link-button:hover {
+    background-color: #363aff;
+    color: #00013e;
 }
 
 
