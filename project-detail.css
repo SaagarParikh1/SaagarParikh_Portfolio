@@ -138,3 +138,49 @@
     transform: translateY(0); /* Reset lift on click */
 }
 
+.pdf-section {
+    background-color: #003366;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pdf-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.pdf-item {
+    flex-basis: 45%;
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pdf-item h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+iframe {
+    border: none;
+    border-radius: 5px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .pdf-item {
+        flex-basis: 100%;
+    }
+
+    iframe {
+        height: 400px;
+    }
+}
