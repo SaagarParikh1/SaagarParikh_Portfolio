@@ -6,6 +6,29 @@ body {
     margin: 0;
     padding: 0;
 }
+html, body {
+    width: 100%;
+    height:100%;
+  }
+  
+  body {
+      background: linear-gradient(-45deg, #0c010f, #1b0033, #090014, #1c0824);
+      background-size: 400% 400%;
+      animation: gradient 20s ease infinite;
+  }
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
 
 header {
     display: flex;
@@ -79,7 +102,7 @@ nav ul li a::after {
     bottom: -5px;
     height: 3px;
     width: 100%;
-    background-color: #00aaff; /* Highlight color */
+    background-color: #9209dc; /* Highlight color */
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
@@ -111,19 +134,13 @@ section {
     margin-right: 50px;
 }
 
-#home .intro h2 {
-    font-size: 1.5rem;
-    color: #ffffff;
-    margin-bottom: 10px;
-}
-
 #home .intro h1 {
     font-size: 3.5rem;
-    color: #000000;
+    color: #9209dc;
     margin-bottom: 10px;
 }
 
-#home .intro h2:last-of-type {
+#home .intro h2{
     font-size: 1.75rem;
     color: #ffffff;
     margin-bottom: 20px;
@@ -219,7 +236,7 @@ section {
 }
 
 .skills-container {
-    max-width: 1200px; /* Set a max width for the container */
+    max-width: auto; /* Set a max width for the container */
     margin: 0 auto; /* Center the container */
     padding: 20px; /* Add some padding */
 }
@@ -234,15 +251,14 @@ section {
 }
 
 .skill-button {
-    background-color: #844caf; /* A pleasant green color */
+    background-color: #8003c3; 
     color: white; /* White text for contrast */
     border: none; /* Remove border */
     border-radius: 8px; /* Rounded corners */
-    padding: 25px 30px; /* Ample padding */
-    font-size: 18px; /* Font size */
+    padding: 25px 30px;
+    font-size: 19px; /* Font size */
     transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background and transform */
     text-align: center; /* Center text in button */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
     margin-top: 5px;
 }
 
@@ -260,10 +276,11 @@ section {
 
    /* Linked button style (buttons with links) */
    .link-button {
-    background-color: #00013e; /* Distinct background color */
+    background-color: #31004b; /* Distinct background color */
     color: #ffffff;
     cursor: pointer;
-    
+    border-radius: 10px;
+    border: 2px solid #8003c3;
 
 }
 
@@ -277,8 +294,9 @@ section {
 
 /* Hover effect for linked buttons */
 .link-button:hover {
-    background-color: #363aff;
-    color: #00013e;
+    background-color: #8003c3;
+    color: #8003c3;
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2); /* Add a subtle shadow */
 }
 
 
@@ -321,7 +339,7 @@ form button:hover {
     padding: 2rem;
     max-width: 1100px;
     margin: 25px auto 0; /* Add a top margin to push it lower */
-    background-color: rgba(0, 39, 77, 0.9); /* Darker background with transparency */
+    background-color: rgba(23, 23, 23, 0.9); /* Darker background with transparency */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     color: #fff;
@@ -331,13 +349,13 @@ form button:hover {
 #about h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #00aaff; /* Highlight color */
+    color: #ffffff; /* Highlight color */
 }
 
 #about h3 {
     font-size: 1.8rem;
     margin: 1rem 0;
-    color: #00aaff;
+    color: #9209dc;
 }
 
 #about h4 {
@@ -350,30 +368,13 @@ form button:hover {
 }
 
 .experience {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
-
-.experience h4 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-    color: #00aaff; /* Highlight color for job titles */
+.section-divider {
+    border: none;
+    border-top: 2px solid #9209dc; /* Same color as other dividers */
+    margin: 2rem 0; /* Spacing above and below the line */
 }
-
-.experience p {
-    margin-bottom: 0.5rem;
-}
-
-.experience + .experience {
-    padding-top: 1rem; /* Add space between sections */
-}
-
-.experience + .experience::before {
-    content: "";
-    display: block;
-    border-top: 1px solid #ffffff; /* Horizontal line color */
-    margin-bottom: 1rem;
-}
-
 .soft-skills {
     display: flex;
     flex-wrap: wrap;
@@ -381,12 +382,12 @@ form button:hover {
 }
 
 .soft-skills li {
-    background-color: #003366;
+    background-color: #8003c3 ;
     color: #fff;
     padding: 10px 15px;
     border-radius: 20px;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: bold; 
 }
 
 /* Back Button Styling */
@@ -478,7 +479,7 @@ footer {
 }
 
 footer a {
-    color: #23d5ab;
+    color: #9209dc;
     text-decoration: none;
     margin: 0 10px;
 }
@@ -502,21 +503,22 @@ footer a:hover {
 
 .model-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 20px;
     justify-items: center;
+    
 }
 
 .model-item {
-    background-color: #003366; /* Darker blue background for items */
-    padding: 20px;
+    background-color: rgba(23, 23, 23, 0.9); /* Darker blue background for items */
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .model-item iframe {
     width: 100%;
-    height: 200px;
+    height: 220px;
     border: none;
     border-radius: 10px;
 }
