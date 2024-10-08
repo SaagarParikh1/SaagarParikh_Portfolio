@@ -260,12 +260,12 @@ section {
     transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background and transform */
     text-align: center; /* Center text in button */
     margin-top: 5px;
+    text-decoration: none;
 }
 
 
 .skill-button a {
     color: white; /* Link color inside the button */
-    text-decoration: none; /* Remove underline from links */
 }
 
 .skills-list li {
@@ -281,7 +281,20 @@ section {
     cursor: pointer;
     border-radius: 10px;
     border: 2px solid #8003c3;
+    border-radius: 8px; /* Rounded corners */
+    padding: 25px 30px;
+    font-size: 19px; /* Font size */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background and transform */
+    text-align: center; /* Center text in button */
+    margin-top: 5px;
+    text-decoration: none;
+}
 
+/* Hover effect for linked buttons */
+.link-button:hover {
+    background-color: #8003c3;
+    color: #ffffff;
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2); /* Add a subtle shadow */
 }
 
 #skills h1 {
@@ -291,14 +304,6 @@ section {
 #skills h2 {
     font-size: 25px;
 }
-
-/* Hover effect for linked buttons */
-.link-button:hover {
-    background-color: #8003c3;
-    color: #8003c3;
-    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2); /* Add a subtle shadow */
-}
-
 
 /* Forms */
 form {
@@ -488,56 +493,38 @@ footer a:hover {
     color: #e73c7e;
 }
 
-/* 3D Modeling Section */
-#3d-modeling {
-    padding: 2rem;
+.back-button {
+    position: fixed;
+    bottom: 30px; 
+    left: 20px; /* Distance from left */
+    background-color: #8003c3; /* Primary blue color */
+    color: white;
+    padding: 12px 20px; /* Increase padding for a larger button */
+    font-size: 16px; /* Larger font size for better readability */
+    font-weight: 600; /* Slightly bolder text */
+    border-radius: 50px; /* Rounded button */
     text-align: center;
-    background-color: #001b2e; /* Matching the background color */
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Larger shadow for depth */
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Initially hidden */
 }
 
-#3d-modeling h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #ffffff;
+
+.back-button.visible {
+    opacity: 1; /* Show when visible */
+    visibility: visible; /* Show when visible */
 }
 
-.model-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 20px;
-    justify-items: center;
-    
+.back-button:hover {
+    background-color: #4d0076; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
 }
 
-.model-item {
-    background-color: rgba(23, 23, 23, 0.9); /* Darker blue background for items */
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+.back-button:active {
+    background-color: #190026; /* Even darker blue when active */
+    transform: translateY(0); /* Reset lift on click */
 }
 
-.model-item iframe {
-    width: 100%;
-    height: 220px;
-    border: none;
-    border-radius: 10px;
-}
-
-.model-item p {
-    margin-top: 10px;
-    color: #ffffff;
-}
-
-/* Thumbnail styling */
-.thumbnail {
-    width: auto;
-    height: 40px;
-    margin-right: 10px;
-    vertical-align: middle;
-    border-radius: 5px;
-}
-
-h1, p {
-    display: inline-block;
-    vertical-align: middle;
-}
