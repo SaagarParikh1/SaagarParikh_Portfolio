@@ -528,3 +528,16 @@ footer a:hover {
     transform: translateY(0); /* Reset lift on click */
 }
 
+/* Thumbnail styling */
+.thumbnail {
+    width: auto;
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+h1, p {
+    display: inline-block;
+    vertical-align: middle;
+}
